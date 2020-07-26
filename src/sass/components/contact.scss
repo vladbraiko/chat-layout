@@ -1,0 +1,87 @@
+.contacts_contact {
+  width: 300px;
+  min-height: 91px;
+  padding: 10px 7px 18px 21px;
+  border-right: 1px solid #edf0f4;
+  cursor: pointer;
+}
+
+.contacts_contact--active {
+  box-shadow: 0px 5px 5px rgba(190, 200, 212, 0.2),
+    0px -5px 5px rgba(224, 224, 224, 0.15);
+  background: #ffffff;
+}
+
+.contacts_contact--unread {
+  background: #f7f9fc;
+}
+
+.contacts_contact--read {
+  background: #ffffff;
+}
+
+.contact_avatar {
+  width: 50px;
+  height: 50px;
+  margin-right: 14px;
+}
+
+.contact_message-time {
+  text-align: right;
+}
+
+.contact_info {
+  display: flex;
+  align-items: center;
+}
+
+.contact_name {
+  margin-bottom: 4px;
+  font-family: $secondary-font-family;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.571429px;
+  color: #01134e;
+  margin-right: 15px;
+}
+
+.contact_message {
+  font-size: 14px;
+  line-height: 18px;
+  color: #252f48;
+  mix-blend-mode: normal;
+  opacity: 0.43;
+}
+
+.contact_message-time {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.428571px;
+  color: #9ba0ad;
+}
+
+.contact_name--active {
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #0ad69c;
+  }
+}
+
+.contacts_profile {
+  display: flex;
+  align-items: center;
+}
+
+.mute {
+  &::after {
+    content: url(images/icons/mute.svg);
+    width: 8px;
+    height: 9px;
+  }
+}

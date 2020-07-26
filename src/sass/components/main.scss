@@ -1,0 +1,18 @@
+.main-view {
+  width: 944px;
+  min-height: 758px;
+  background: #f9fafc;
+}
+
+.main-view_chat-window {
+  width: 854px;
+  min-height: 552px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 30px rgba(153, 163, 174, 0.06);
+  border-radius: 4px;
+  background: #ffffff;
+}
+
+.chat-window_messanger {
+  display: flex;
+}

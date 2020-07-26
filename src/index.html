@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Chat layout</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="sidebar_content">
+          <img src="./images/logo.svg" alt="logo" class="sidebar_logo" />
+          <nav class="sidebar_navigation">
+            <a href="#" class="navigation_item calendar notification"></a>
+            <a href="#" class="navigation_item profile"></a>
+            <a href="#" class="navigation_item settings"></a>
+            <a href="#" class="navigation_item people"></a>
+            <a href="#" class="navigation_item messages"></a>
+          </nav>
+        </div>
+      </aside>
+      <main class="main-view">
+        <header class="main-view_header">
+          <div class="header_content">
+            <div class="header_tabs">
+              <span class="tabs_item tabs_item--arrow">Home</span>
+              <span class="tabs_item">Network</span>
+            </div>
+            <div class="header_profile">
+              <img
+                src="./images/myProfileAvatar.png"
+                alt="avatar"
+                class="header_profile-avatar"
+              />
+              <span class="header_profile-name">Sarah Freeman</span>
+            </div>
+          </div>
+        </header>
+        <div class="main-view_chat-window">
+          <div class="chat-window_messanger">
+            <div class="window-messanger_contacts">
+              <div class="contacts_contact contacts_contact--unread">
+                <div class="contact_message-time">9:32</div>
+                <div class="contact_info">
+                  <img
+                    src="./images/firstAvatar.png"
+                    alt="avatar"
+                    class="contact_avatar"
+                  />
+                  <div class="contacts_text">
+                    <div class="contacts_profile">
+                      <h5 class="contact_name contact_name--active">
+                        Miranda Hops
+                      </h5>
+                      <div class="mute"></div>
+                    </div>
+                    <p class="contact_message">Excepteur sint occaecatar…</p>
+                  </div>
+                </div>
+              </div>
+              <div class="contacts_contact contacts_contact--unread">
+                <div class="contact_message-time">22:01</div>
+                <div class="contact_info">
+                  <img
+                    src="./images/secondAvatar.png"
+                    alt="avatar"
+                    class="contact_avatar"
+                  />
+                  <div class="contacts_text">
+                    <h5 class="contact_name">Barry Callebaut</h5>
+                    <p class="contact_message">Nemo enim ipsam volupta…</p>
+                  </div>
+                </div>
+              </div>
+              <div class="contacts_contact contacts_contact--active">
+                <div class="contact_message-time">19:15</div>
+                <div class="contact_info">
+                  <img
+                    src="./images/thirdAvatar.png"
+                    alt="avatar"
+                    class="contact_avatar"
+                  />
+                  <div class="contacts_text">
+                    <h5 class="contact_name contact_name--active">
+                      Stacey Dosh
+                    </h5>
+                    <p class="contact_message">Ut enim ad minima veniam…</p>
+                  </div>
+                </div>
+              </div>
+              <div class="contacts_contact contacts_contact--read">
+                <div class="contact_message-time">13:49</div>
+                <div class="contact_info">
+                  <img
+                    src="./images/fourthAvatar.png"
+                    alt="avatar"
+                    class="contact_avatar"
+                  />
+                  <div class="contacts_text">
+                    <h5 class="contact_name">Michael Kors</h5>
+                    <p class="contact_message">To take a trivial example…</p>
+                  </div>
+                </div>
+              </div>
+              <div class="contacts_contact contacts_contact--read">
+                <div class="contact_message-time">10:25</div>
+                <div class="contact_info">
+                  <img
+                    src="./images/fifthAvatar.png"
+                    alt="avatar"
+                    class="contact_avatar"
+                  />
+                  <div class="contacts_text">
+                    <h5 class="contact_name contact_name--active">
+                      Johny Cash
+                    </h5>
+                    <p class="contact_message">Great explorer of the truth…</p>
+                  </div>
+                </div>
+              </div>
+              <div class="contacts_contact contacts_contact--read">
+                <div class="contact_message-time">08:53</div>
+                <div class="contact_info">
+                  <img
+                    src="./images/sixthAvatar.png"
+                    alt="avatar"
+                    class="contact_avatar"
+                  />
+                  <div class="contacts_text">
+                    <h5 class="contact_name">Stacey Dosh</h5>
+                    <p class="contact_message">Ut enim ad minima veniam…</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="window-messanger_chat">
+              <div class="chat_serch-bar">
+                <div class="chat-search-icon"></div>
+                <input
+                  type="text"
+                  class="chat_search-input"
+                  placeholder="Search message..."
+                />
+              </div>
+              <span class="chat_message-date">Today, 17.03.2018</span>
+              <div class="chat_messages-window">
+                <div class="messages-window_message">
+                  <img
+                    src="./images/sixthAvatar.png"
+                    alt="avatar"
+                    class="message_avatar"
+                  />
+                  <div class="message_text-block input-message">
+                    <p class="message_text-block-text">
+                      On the other hand, we denounce with righteous indignation!
+                    </p>
+                    <span class="message_text-block-time">01:14</span>
+                  </div>
+                </div>
+                <div class="messages-window_message--output">
+                  <div class="messages-window_message">
+                    <div class="message_text-block output-message">
+                      <p class="message_text-block-text">
+                        Which is the same as saying?
+                      </p>
+                      <span class="message_text-block-time">01:38</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="messages-window_message">
+                  <img
+                    src="./images/sixthAvatar.png"
+                    alt="avatar"
+                    class="message_avatar"
+                  />
+                  <div class="message_text-block input-message">
+                    <p class="message_text-block-text">
+                      But in certain circumstances and owing to the claims of
+                      duty or the obligations of business it will frequently
+                      occur that pleasures
+                    </p>
+                    <span class="message_text-block-time">01:14</span>
+                  </div>
+                </div>
+                <div class="messages-window_message--output">
+                  <div class="messages-window_message">
+                    <div class="message_text-block output-message">
+                      <p class="message_text-block-text">
+                        To take a trivial example, which of us ever undertakes)
+                      </p>
+                      <span class="message_text-block-time">01:38</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="chat_messages-window-scroll"></div>
+              <div class="chat_messages-window-scroll--position"></div>
+              <div class="chat_message-input-bar">
+                <input
+                  type="text"
+                  class="chat_search-input"
+                  placeholder="Write a message…"
+                />
+                <div class="message-input-bar_panel">
+                  <div class="message-input-bar_panel-tools">
+                    <div class="message-input-bar_panel-tool smiles"></div>
+                    <div class="message-input-bar_panel-tool attach"></div>
+                  </div>
+
+                  <div class="message-input-bar_panel-send"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

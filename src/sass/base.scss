@@ -1,0 +1,21 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $main-font-family;
+  font-size: $main-font-size;
+}
+
+.container {
+  width: 1022px;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 10px;
+}

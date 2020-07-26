@@ -1,0 +1,96 @@
+.sidebar {
+  width: 80px;
+  min-height: 758px;
+  background-color: #01134e;
+  padding-top: 18px;
+}
+
+.sidebar_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar_logo {
+  margin-bottom: 65px;
+}
+
+.sidebar_navigation {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 300px;
+  width: 100%;
+}
+
+.navigation_item {
+  width: 100%;
+  height: 48px;
+
+  &:hover {
+    border-left: 4px solid #0ad69c;
+    border-right: 4px solid #0ad69c00;
+  }
+}
+
+.calendar {
+  background: no-repeat url(images/icons/calendar.svg) center;
+
+  &:hover {
+    background: no-repeat url(images/icons/calendarHover.svg) center;
+  }
+}
+
+.profile {
+  background: no-repeat url(images/icons/profile.svg) center;
+
+  &:hover {
+    background: no-repeat url(images/icons/profileHover.svg) center;
+  }
+}
+
+.settings {
+  background: no-repeat url(images/icons/settings.svg) center;
+
+  &:hover {
+    background: no-repeat url(images/icons/settingsHover.svg) center;
+  }
+}
+
+.people {
+  background: no-repeat url(images/icons/team.svg) center;
+
+  &:hover {
+    background: no-repeat url(images/icons/teamHover.svg) center;
+  }
+}
+
+.messages {
+  background: no-repeat url(images/icons/messages.svg) center;
+
+  &:hover {
+    background: no-repeat url(images/icons/messagesHover.svg) center;
+  }
+}
+
+.notification {
+  &::after {
+    content: "1";
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background-color: #2a74db;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 14px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 20px;
+    top: 7px;
+  }
+}

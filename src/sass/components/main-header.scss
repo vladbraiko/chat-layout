@@ -1,0 +1,55 @@
+.main-view_header {
+  min-height: 61px;
+  border-bottom: 1px solid #dae4f2;
+  display: flex;
+  background: #ffffff;
+  margin-bottom: 42px;
+}
+
+.header_content {
+  width: 850px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.685714px;
+  color: #252f48;
+}
+
+.header_tabs {
+  width: 130px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_profile-avatar {
+  width: 22px;
+  height: 22px;
+  margin-right: 9px;
+}
+
+.header_profile {
+  display: flex;
+  align-items: center;
+}
+
+.header_profile-name {
+  &::after {
+    content: url(images/icons/downArrow.svg);
+    margin-left: 7.5px;
+    cursor: pointer;
+  }
+}
+
+.tabs_item--arrow {
+  &::after {
+    content: url(images/icons/rightArrow.svg);
+    width: 6px;
+    height: 8px;
+    vertical-align: middle;
+
+    margin-left: 15px;
+  }
+}
